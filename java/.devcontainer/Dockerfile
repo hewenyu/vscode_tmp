@@ -1,6 +1,7 @@
 # [Choice] Java version: 11, 15
-ARG VARIANT=11
-FROM mcr.microsoft.com/vscode/devcontainers/java:${VARIANT}
+ARG VARIANT=latest
+# docker pull hewenyulucky/vscode-java:latest
+FROM hewenyulucky/vscode-java:${VARIANT}
 
 # [Option] Install Maven
 ARG INSTALL_MAVEN="false"
